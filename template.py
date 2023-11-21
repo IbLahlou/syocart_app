@@ -25,14 +25,13 @@ list_of_files = [
     ## -------------------Service WEB---------------------
     "service-web/app.py",
     #"service-web/Dockerfile",
-    #"service-web/templates/css/style.css",
-    #"service-web/templates/html/index.html",
-    #"service-web/templates/js/script.js",
+    "service-web/static/css/style.css",
+    "service-web/templates/index.html",
+    "service-web/static/js/script.js",
 
 
     ## -------------------Service Data---------------------
     # local data
-    "out/data.csv",
 
     ## -------------------Service Monitoring---------------------
     #"service-monitoring/Dockerfile",

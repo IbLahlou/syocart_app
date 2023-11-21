@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="../static/favicon.ico" type="image/x-icon">
+
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!--=============== CSS ===============-->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <title>Syocart | IL D Company </title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="profile container">
+    <!-- Theme button -->
+    <i class="ri-moon-line change-theme" id="theme-button"></i>
+      <div class="profile__data">
+
+
+
+        <h2 class="profile__name">Syocart Application</h2>
+        <h3 class="profile__profession">IOT Based App</h3>
+
+
+
+
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <section class="filters container">
+      <!--=============== FILTERS TABS ===============-->
+      <ul class="filters__content">
+        <button class="filters__button filter-tab-active" data-target="#projects">
+          User Experience Form
+        </button>
+        <button class="filters__button" data-target="#skills">
+          Form
+        </button>
+
+      </ul>
+
+      <div class="filters__sections">
+        <!--=============== PROJECTS ===============-->
+
+    <div class="projects__content grid filters__active" data-content id="projects">
+
+<br>
+<br>
+<form action="/submit-feedback" method="post" class="feedback-form">
+    <h1>Formulaire</h1>
+
+<br>
+      First Name:
+      <br>
+      <br>
+      <input type="text" id="name" name="fname" required placeholder="your first name">
+    <br>
+      Last Name:
+      <br>
+      <br>
+      <input type="text" id="name" name="lname" required placeholder="your last name">
+    <br>
+      Email:
+      <br>
+      <br>
+      <input type="email" id="name" name="email" required placeholder="your email">
+      Date Naissance :
+      <br>
+      <br>
+      <input type="date" id="name" name="date" required >
+    <br>
+      Are you satisfied?
+    <div class="range-container">
+        <input type="range" name="satisfied" min="0" max="10" >
+        <div class="range-labels">
+            <span class="range-label"><i class="ri-emotion-unhappy-fill"></i></span>
+            <span class="range-label"><i class="ri-emotion-normal-fill"></i></span>
+            <span class="range-label"><i class="ri-emotion-fill"></i></span>
+        </div>
+    </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+
+
+
+
+    </section>
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <span class="footer__copy">
+            <ul class="profile__social">
+          <a href="https://www.medium.com/" target="_blank" class="profile__social-link">
+            <i class="ri-medium-line"></i>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" class="profile__social-link">
+            <i class="ri-facebook-box-line"></i>
+          </a>
+          <a href="https://github.com/" target="_blank" class="profile__social-link">
+            <i class="ri-github-line"></i>
+          </a>
+        </ul>
+      &#169; Copyright. All rigths reserved
+    </span>
+  </footer>
+
+
+</body>
+</body>
+
+
+
+</html>
