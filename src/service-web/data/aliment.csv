@@ -1,0 +1,19 @@
+id,Nom d'aliment,Temperature Min,Temperature Max
+1,Viande de Vache,0,4
+2,Viande de Boeuf,0,4
+3,Viande de Porc,0,4
+4,Poison entier,-1,2
+5,Poissons filetés ,-1,2
+6,Fruits de mer,-1,2
+7,Lait frais,0,4
+8,fromage frais,0,4
+9,Yaourts,0,4
+10,Fromages à pâte molle,4,8
+11,Fromages à pâte pressée,4,12
+12,Fromages à pâte persillée,2,4
+13,Fruits tropicaux,8,13
+14,Fruits à pépins,1,5
+15,Fruits à noyau,0,4
+16,Légumes racines,0,4
+17,Légumes-feuilles,0,4
+18,Légumes à Tiges,0,4
