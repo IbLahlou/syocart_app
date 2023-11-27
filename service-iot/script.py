@@ -10,10 +10,11 @@ baud_rate = 115200
 data = {'Time': [], 'Humidity': [], 'Temperature': []}
 
 with serial.Serial(serial_port, baud_rate) as ser:
-    for _ in range(100):  # Exécutez pendant 20 itérations
+    for _ in range(1000):  # Exécutez pendant 1000 itérations
         line = ser.readline().decode('utf-8').strip()
         print(f'Ligne reçue : {line}')
-        timestamp, humidity, temperature = map(float, line.split(','))
+        timestamp, humidity, temperature = line.split(',')
+        humidity , temperature = float(humidity), float(temperature)
         data['Time'].append(timestamp)
         data['Humidity'].append(humidity)
         data['Temperature'].append(temperature)
