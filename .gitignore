@@ -1,0 +1,3 @@
+service-iot/out/*
+SYOCART.egg-info/*
+build

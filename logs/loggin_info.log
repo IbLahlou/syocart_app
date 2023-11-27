@@ -69,3 +69,20 @@
 [2023-11-21 09:16:20,307]: Creating directory: service-web\static\js for the file: script.js
 [2023-11-21 09:16:20,307]: Creating empty file: service-web\static\js\script.js
 [2023-11-21 09:16:20,307]: File creation process completed
+[2023-11-27 11:41:42,915]: Creating empty file: requirements.txt
+[2023-11-27 11:41:42,935]: Creating empty file: README.md
+[2023-11-27 11:41:42,941]: Creating directory: service-iot for the file: script.py
+[2023-11-27 11:41:42,942]: script.py already exists
+[2023-11-27 11:41:42,977]: Creating directory: service-iot for the file: Dockerfile
+[2023-11-27 11:41:42,977]: Dockerfile already exists
+[2023-11-27 11:41:42,983]: Creating directory: service-web for the file: app.py
+[2023-11-27 11:41:42,983]: app.py already exists
+[2023-11-27 11:41:42,986]: Creating directory: service-web for the file: Dockerfile
+[2023-11-27 11:41:42,986]: Dockerfile already exists
+[2023-11-27 11:41:42,989]: Creating directory: service-web\static\css for the file: style.css
+[2023-11-27 11:41:42,989]: style.css already exists
+[2023-11-27 11:41:42,991]: Creating directory: service-web\templates for the file: index.html
+[2023-11-27 11:41:42,991]: index.html already exists
+[2023-11-27 11:41:42,995]: Creating directory: service-web\static\js for the file: script.js
+[2023-11-27 11:41:42,995]: script.js already exists
+[2023-11-27 11:41:42,995]: File creation process completed
