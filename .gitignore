@@ -1,3 +1,4 @@
-service-iot/out/*
+src/service-iot/out/*
 SYOCART.egg-info/*
+src/service-ai/artifacts/*
 build

@@ -33,9 +33,6 @@ list_of_files = [
     ## -------------------Service Data---------------------
     # local data
 
-    ## -------------------Service Monitoring---------------------
-    "src/service-monitoring/docker-compose.yml",
-    "src/service-monitoring/prometheus.yml",
 
 ]
 
