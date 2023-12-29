@@ -1,4 +1,18 @@
 src/service-iot/out/*
 SYOCART.egg-info/*
 src/service-ai/artifacts/*
-build
+src/service-ai/artifacts/data/*
+src/service-ai/artifacts/model/*
+src/service-ai/res/*
+build/*
+
+
+# Ignore all .pyc files
+*.pyc
+
+iot_env/*
+src/service-ai/pycache/*
+src/service-rest/pycache/*
+src/service-serial/pycache/*
+
+

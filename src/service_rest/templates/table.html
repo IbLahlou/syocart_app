@@ -1,0 +1,132 @@
+{% extends 'navbar.html' %}
+{% load static %}
+
+{% block index %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="1200">
+    <title>Table VALUE </title>
+    <link rel="stylesheet" href="{% static 'css/table.css' %}">
+
+    <style>
+        .toggle {
+            position: relative;
+            display: inline-block;
+            width: 50px; /* Adjust the width as needed */
+            height: 30px; /* Adjust the height as needed */
+            background-color: rgb(200, 200, 200);
+            border-radius: 15px;
+            border: 1px solid rgb(150, 150, 150); /* Lighter border color */
+            cursor: pointer;
+        }
+
+        .toggle:after {
+            content: '';
+            position: absolute;
+            width: 50%; /* Adjust the width as needed */
+            height: 100%; /* Adjust the height as needed */
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255); /* White color */
+            top: 0;
+            left: 0;
+            transition: all 0.3s;
+        }
+
+        .checkbox:checked+.toggle::after {
+            left: 50%;
+        }
+
+        .checkbox:checked+.toggle {
+            background-color: rgba(235, 3, 3, 0.733); /* Darker red color when checked */
+        }
+
+        .checkbox {
+            display: none;
+        }
+         <style>
+        /* Add any additional styles you need for the alert here */
+        .alert {
+            background-color: #f44336; /* Red background color */
+            color: white;
+            padding: 20px; /* Increased padding for a larger size */
+            margin-bottom: 20px;
+            border-radius: 5px;
+            display: block; /* Show the alert by default */
+            animation: blink 1s infinite; /* Blinking animation */
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0; /* Make the alert disappear at 50% of the animation */
+            }
+        }
+    </style>
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Check if the screen width is below a certain threshold (adjust as needed)
+            if (window.innerWidth < 768) {
+                alert('SVP utiliser le mode ordinateur');
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <main class="table">
+        <section class="table__header">
+            <h1>DASHBOARD</h1>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Température <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Humidité <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Date <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Maintenance <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> {{valeurs.id}} </td>
+                        <td> {{valeurs.temp}} °C</td>
+                        <td> {{valeurs.hum}} %</td>
+                        <td>{{valeurs.date}}</td>
+                        <td>
+                            <center>
+                                <input type="checkbox" id="switch" class="checkbox" {% if toggle_state %}checked{% endif %} />
+                                <label for="switch" class="toggle"></label>
+                            </center>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const checkbox = document.getElementById('switch');
+
+            // Retrieve the stored state from local storage
+            const storedState = localStorage.getItem('toggleState');
+
+            // Set the initial state based on the stored value
+            checkbox.checked = storedState === 'checked';
+
+            // Add an event listener to update the storage on checkbox change
+            checkbox.addEventListener('change', function () {
+                const newState = checkbox.checked ? 'checked' : 'unchecked';
+                localStorage.setItem('toggleState', newState);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+{% endblock index %}
