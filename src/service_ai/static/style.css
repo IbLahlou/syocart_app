@@ -1,0 +1,51 @@
+/* Add these styles to your existing style.css or create a new file */
+
+/* Form container */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Form input fields */
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Form button */
+  button {
+    background-color: #0073ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Result section */
+  h2 {
+    margin-top: 20px;
+  }
+  
+  /* Error message */
+  p.error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  /* Success message */
+  p.success {
+    color: green;
+    margin-top: 10px;
+  }
+  

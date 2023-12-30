@@ -18,24 +18,21 @@ list_of_files = [
     #"deployement.yml",
 
     ## -------------------Service IOT--------------------
-    "service-iot/script.py",
-    #"service-iot/Dockerfile",
+    "src/service-iot/script.py",
+    "src/service-iot/Dockerfile",
     
 
     ## -------------------Service WEB---------------------
-    "service-web/app.py",
-    #"service-web/Dockerfile",
-    #"service-web/templates/css/style.css",
-    #"service-web/templates/html/index.html",
-    #"service-web/templates/js/script.js",
+    "src/service-web/app.py",
+    "src/service-web/Dockerfile",
+    "src/service-web/static/css/style.css",
+    "src/service-web/templates/index.html",
+    "src/service-web/static/js/script.js",
 
 
     ## -------------------Service Data---------------------
     # local data
-    "out/data.csv",
 
-    ## -------------------Service Monitoring---------------------
-    #"service-monitoring/Dockerfile",
 
 ]
 

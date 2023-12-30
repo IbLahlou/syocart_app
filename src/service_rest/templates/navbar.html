@@ -1,0 +1,68 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}" />
+    <title>SYOCART APP</title>
+      <style>.syocart{
+
+
+text-decoration: none;}</style>
+  </head>
+  <body>
+  <header class="header">
+    <div class="menu-bar">
+      <a href="home" class="syocart" ><h1 class="logo">SY<span>OCART</span></h1></a>
+      <ul>
+
+
+        <li><a href="chartTEMP">CHART TEMPERATURE<i class="fas fa-caret-down"></i></a>
+
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="c_jour">CHART JOUR</a></li>
+                  <li>   <a href="chartTEMP_semaine">CHART SEMAINE</a></li>
+                  <li> <a href="chartTEMP_mois">CHART MOIS</a></li>
+                </ul>
+              </div>
+        </li>
+
+
+
+        <li><a href="chartHUM">CHART HUMIDITE<i class="fas fa-caret-down"></i></a>
+
+          <div class="dropdown-menu">
+              <ul>
+                <li><a href="chartHUM_jour">CHART JOUR</a></li>
+                <li>   <a href="chartHUM_semaine">CHART SEMAINE</a></li>
+                <li> <a href="chartHUM_mois">CHART MOIS</a></li>
+              </ul>
+            </div>
+      </li>
+
+
+        <li><a href="download_csv">DOWNLOAD CSV<i class="fas fa-caret-down"></i></a>
+
+          <div class="dropdown-menu">
+              <ul>
+                <li><a href="csv_jour">DOWNLOAD CSV JOUR</a></li>
+                <li>   <a href="csv_semaine">DOWNLOAD CSV SSEMAINE</a></li>
+                <li> <a href="csv_mois">DOWNLOAD CSV  MOIS</a></li>
+              </ul>
+            </div>
+      </li>
+        {% if user.is_authenticated %}
+   <li><a href="{% url 'logout' %}">LOGOUT</a></li>
+{% endif %}
+
+
+      </ul>
+    </div>
+
+</header>
+  </body>
+</html>
+{% block index %}
+{% endblock index %}
