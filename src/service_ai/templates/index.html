@@ -88,8 +88,8 @@
     <h2>Result:</h2>
     <p>Class Name: {{ result.class_name }}</p>
     <p>Confidence Score: {{ result.confidence_score }}</p>
-    <p> Temperature min : {{ result.temp_min }}</p>
-    <p> Temperature max : {{ result.temp_max }}</p>
+    <p> Temperature min : {{ result.min_temp }}</p>
+    <p> Temperature max : {{ result.max_temp }}</p>
 {% elif error %}
     <p class="error">Error: {{ error }}</p>
 {% endif %}

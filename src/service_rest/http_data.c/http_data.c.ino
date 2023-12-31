@@ -9,7 +9,7 @@ DHT dht(DHTPIN, DHTTYPE);
 
 const char* ssid = "IL D Wifi";
 const char* password = "12345678";
-const char* serverName = "http://192.168.0.105:8000/api/";
+const char* serverName = "http://0.0.0.0:8000/api/";
 
 void setup() {
   dht.begin();

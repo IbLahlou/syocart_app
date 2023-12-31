@@ -2,6 +2,8 @@
 
 Pour accéder à l'API, vous devrez peut-être effectuer les étapes suivantes :
 
+
+![Alt text](image.png)
 ### Étapes pour l'API avec Django REST framework :
 
 1. **Créer un Superutilisateur Django :**
