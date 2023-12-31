@@ -50,6 +50,6 @@ Les objectifs principaux de SYOCART comprennent :
 - Ibrahim Lahlou
 - Hicham Ghouch
 
-## Licence
+## Pipeline Architecture
 
-...
+![image](https://github.com/IbLahlou/syocart_app/assets/105231126/8f9426e0-0ead-4a52-9dba-4cabdf21e711)
